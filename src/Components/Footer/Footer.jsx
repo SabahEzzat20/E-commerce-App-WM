@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
     return (
         <footer>
-            <Grid container size={12} spacing={3} className="footer-container">
+            <Grid container size={12} spacing={3} className="footer-container" sx={{ display: "flex",justifyContent: {xl: "space-between",lg: 'space-between',md: 'start'},alignItems: "start"}}>
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 2, xl: 2 }}>
                     <h2>Exclusive</h2>
                     <p className='subscribe-title'>Subscribe</p>
