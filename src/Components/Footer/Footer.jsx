@@ -5,7 +5,13 @@ import QRCodeImage from "../../Assets/Qrcode 1.png";
 import googlePlayImage from "../../Assets/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png";
 import appStoreImage from "../../Assets/download-appstore.png";
 import sendIcon from "../../Assets/Vector.png";
+import facebookIcon from "../../Assets/Vector copy.png";
+import twitterIcon from "../../Assets/Vector (1).png";
+import instagramIcon from "../../Assets/icon-instagram.png";
+import linkedinIcon from "../../Assets/Vector (2).png";
+
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 export const Footer = () => {
     return (
         <footer>
@@ -49,6 +55,12 @@ export const Footer = () => {
                             <img src={googlePlayImage} alt="get the app on google play" />
                             <img src={appStoreImage} alt="get the app on app store" />
                         </Stack>
+                    </Stack>
+                    <Stack direction='row' spacing={2} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',marginTop: '1.5em'}}>
+                        <Link><img src={facebookIcon} alt="facebook icon" /></Link>
+                        <Link><img src={twitterIcon} alt="twitter icon" /></Link>
+                        <Link><img src={instagramIcon} alt="instagram icon" /></Link>
+                        <Link><img src={linkedinIcon} alt="linkedin icon" /></Link>
                     </Stack>
                 </Grid>
             </Grid>
